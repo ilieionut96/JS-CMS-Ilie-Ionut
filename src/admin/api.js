@@ -1,10 +1,9 @@
 const express = require('express');
-const db = require('../db');
 
 const router = express.Router();
 
 router.get('/posts', (req, res) => {
-    res.send(db.getAll('posts'));
+    res.send([]); // @todo: de întors articolele din baza de date
 });
 // @todo: de adăugat toate rutele necesare pentru a avea un API restfull
 
